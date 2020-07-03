@@ -124,7 +124,7 @@ end
 if isempty(numFolds) || numFolds==0
     % Use a heuristic to set a default number of folds given the data set size,
     % number of classes
-    numFolds = howManyFolds(TimeSeries.Group,numClasses);
+    numFolds = HowManyFolds(TimeSeries.Group,numClasses);
 end
 
 % Reset the random seed:

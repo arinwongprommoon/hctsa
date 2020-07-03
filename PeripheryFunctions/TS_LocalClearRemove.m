@@ -1,4 +1,4 @@
-function TS_LocalClearRemove.m(whatData,tsOrOps,idRange,doRemove)
+function TS_LocalClearRemove(whatData,tsOrOps,idRange,doRemove)
 % TS_LocalClearRemove.m     Clear or remove data from an hctsa dataset
 %
 % 'clear' (doRemove = false) means clearing any calculations performed about a

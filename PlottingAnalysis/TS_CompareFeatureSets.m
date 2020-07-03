@@ -61,7 +61,7 @@ end
 load(dataFile,'groupNames');
 numClasses = max(TimeSeries.Group); % assuming group in form of integer class labels starting at 1
 numFeatures = height(Operations);
-numFolds = howManyFolds(TimeSeries.Group,numClasses);
+numFolds = HowManyFolds(TimeSeries.Group,numClasses);
 
 %-------------------------------------------------------------------------------
 % Get the filters
