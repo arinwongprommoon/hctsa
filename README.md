@@ -1,6 +1,7 @@
 # :wavy_dash: *hctsa* :wavy_dash:: highly comparative time-series analysis
 
 [![DOI](https://zenodo.org/badge/10790340.svg)](https://zenodo.org/badge/latestdoi/10790340)
+[![Twitter](https://img.shields.io/twitter/url/https/twitter.com/compTimeSeries.svg?style=social&label=Follow%20%40compTimeSeries)](https://twitter.com/compTimeSeries)
 
 *hctsa* is a software package for running highly comparative time-series analysis using [Matlab](https://www.mathworks.com/products/matlab/) (full support for versions R2018b or later).
 
@@ -75,7 +76,7 @@ There are a range of open datasets with pre-computed _hctsa_ features, as well a
 
 Matlab code for computing features for an initialized `HCTSA.mat` file, by distributing the computation across a large number of cluster jobs (using pbs or slurm schedulers) is [here](https://github.com/benfulcher/distributed_hctsa).
 
-### Publications
+### Publications :closed_book:
 
 _hctsa_ has been used by us and others to do new science in neuroscience, engineering, and biomedicine.
 An updated list of publications using _hctsa_ is on this [wiki page](https://github.com/benfulcher/hctsa/wiki/Publications-using-hctsa).
@@ -95,19 +96,12 @@ A range of external code packages are provided in the **Toolboxes** directory of
 
 ### External packages and dependencies
 
-The following [Matlab toolboxes](https://mathworks.com/programs/nrd/matlab-toolbox-price-request.html?ref=ggl&s_eid=ppc_18665571802&q=matlab%20toolboxes%20price) are used by *hctsa* and are required for full functionality of the software.
-In the case that some toolboxes are unavailable, the *hctsa* software can still be used, but only a reduced set of time-series features will be computed.
+Many features in _hctsa_ rely on external packages and Matlab toolboxes.
+In the case that some of them are unavailable, *hctsa* can still be used, but only a reduced set of time-series features will be computed.
 
-1. Statistics Toolbox
-2. Signal Processing Toolbox
-3. Curve Fitting Toolbox
-4. System Identification Toolbox
-5. Wavelet Toolbox
-6. Econometrics Toolbox
+_hctsa_ uses the following [Matlab toolboxes](https://mathworks.com/programs/nrd/matlab-toolbox-price-request.html?ref=ggl&s_eid=ppc_18665571802&q=matlab%20toolboxes%20price): Statistics, Signal Processing, Curve Fitting, System Identification, Wavelet, and Econometrics.
 
----
-
-The following time-series analysis packages are provided with the software (in the **Toolboxes** directory), and are used by our main feature extraction algorithms to compute meaningful structural features from time series:
+The following external time-series analysis code packages are provided with the software (in the **Toolboxes** directory), and are used by our main feature-extraction algorithms to compute meaningful structural features from time series:
 
 * [*TISEAN* package for nonlinear time-series analysis, version 3.0.1](http://www.mpipks-dresden.mpg.de/~tisean/Tisean_3.0.1/index.html) (GPL license).
 * [*TSTOOL* package for nonlinear time-series analysis, version 1.2](http://www.dpi.physik.uni-goettingen.de/tstool/) (GPL license).

@@ -148,7 +148,7 @@ theVariables{2} = loadedData{2}.TimeSeries.Properties.VariableNames;
 % Check the git data
 %-------------------------------------------------------------------------------
 hasGit = cellfun(@(x)ismember('gitInfo',x),theVariables);
-if all(hasGit==0)
+if sum(hasGit)==0
     % git info not present in either; keep an empty structure:
     gitInfo = struct();
 elseif sum(hasGit)==1
