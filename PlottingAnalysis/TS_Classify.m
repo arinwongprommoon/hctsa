@@ -214,7 +214,8 @@ if doPlot
         if exist('confusionchart','file') ~= 0
             % Requires Matlab 2020 (Stats/ML Toolbox):
             f = figure('color','w');
-            confusionchart(realLabels,predictLabels);
+            %confusionchart(realLabels,predictLabels);
+            plotconfusion(realLabels,predictLabels);
         else
             % Requires the Deep Learning Toolbox:
             f_confusion = figure('color','w');
