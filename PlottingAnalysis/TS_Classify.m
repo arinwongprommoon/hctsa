@@ -93,13 +93,14 @@ clear('inputP');
 TellMeAboutLabeling(TimeSeries);
 
 % Settings for the classification model:
-if nargin < 2 || isempty(fields(cfnParams))
+if nargin < 2 || (isstruct(cfnParams) && isempty(fields(cfnParams))) || isempty(cfnParams)
     cfnParams = GiveMeDefaultClassificationParams(TimeSeries);
 end
 TellMeAboutClassification(cfnParams);
 
 % Filter down a reduced feature set if required:
 [TS_DataMat,Operations] = FilterFeatures(TS_DataMat,Operations,cfnParams);
+numFeatures = height(Operations);
 
 %-------------------------------------------------------------------------------
 % Fit the model
